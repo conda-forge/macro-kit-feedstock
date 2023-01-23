@@ -21,6 +21,7 @@ requirements:
     - pip
     - python
   run:
+    - ipython
     - python
     - typing-extensions
 
