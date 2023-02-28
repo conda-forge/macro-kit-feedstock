@@ -1,11 +1,11 @@
-About macro-kit
-===============
+About macro-kit-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/macro-kit-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hanjinliu/macro-kit
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/macro-kit-feedstock/blob/main/LICENSE.txt)
 
 Summary: Macro recording and metaprogramming in Python
 
