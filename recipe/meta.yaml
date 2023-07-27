@@ -1,5 +1,5 @@
 {% set name = "macro-kit" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/macro-kit-{{ version }}.tar.gz
-  sha256: a61ef128517bd7f4189cdd25357998c822fb1eb336720cda1843b202f705fd8a
+  sha256: 34c6d3c9066dfabc7487975f4ccd6d1d1320e1e0a75d96e1c6b79ae42d186326
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
