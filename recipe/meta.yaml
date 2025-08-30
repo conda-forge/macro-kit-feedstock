@@ -1,13 +1,13 @@
 {% set name = "macro-kit" %}
-{% set version = "0.4.7" %}
+{% set version = "0.4.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a51f62b425191c915f9b1dbc85a5620bb883231d82ed66fdc6d9a0f8a86861c1
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: cb78a0ba35ab1c2090ba49c1f211037bf95cc0d72433d5fdb0823fefaf4c47f0
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -17,6 +17,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - cython
     - hatchling
